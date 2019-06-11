@@ -102,5 +102,58 @@ height é altura-->
 
 <!-- /tabela -->
 
+<!-- formulário -->
+
+<!-- Login -->
+<h2>Login</h2>
+	
+	<!-- "action" envia para para página que desejar e utilizando "name" das outras tags pega esses inputs(dados digitados) e envia para o banco de dados, seja para cadastrar ou para verificar se os dados estão corretos ao logar-->
+	<form action="processa.php">
+
+		Login:<br>
+		
+		<!-- "name" recupera os dados que o usuário digitou, serve para quando quer salvar ou verificar algum dado daquele input-->
+		<input type="text" name="login">
+		<br>		
+		Senha:<br>
+		<input type="password" name="senha">
+		<br>
+		
+		<!-- "submit" é o tipo padrão enviar/logar/cadastrar. "value" é o nome que será exibido dentro do submit-->
+		<input type="submit" value="Logar">
+<!-- /login -->	
+<!-- Cadastro -->
+
+	<h2>Cadastre-se:</h2>
+	Cadastro:<br>
+		<input type="text" name="cadastro">
+		<br>
+		<!-- "radio" é o tipo seleção, exemplo escolha entre masculino e feminino -->
+		<!-- neste caso "value" irá saber se o usuários selecionou Masculino M ou Feminino F-->
+		<input type="radio" name="sexo" value="M"> Masculino
+		<input type="radio" name="sexo" value="F"> Feminino
+
+		Interesses:<br>
+		<!-- "checkbox" para usuário escolher mais de uma opção caso queira, exemplo futebol e curso como interesses-->
+		<input type="checkbox" name=""> futebol <br>		
+		<input type="checkbox" name="">	curso <br>
+
+		<!-- "select" para o escolher uma opção dentro de diversas. "option" para definir o que será exibido como opção-->
+		<select name="estado">
+			<option value="sp">SP</option>
+			<option value="df">DF</option>
+			<option value="mg">MG</option>
+
+			Obs: <br>
+			<!-- "textarea" é a caixa de texto para o usuário preencher-->
+			<textarea></textarea>	
+			<input type="submit" value="Cadastrar" name="Cadastrar">
+		</select>
+
+<!-- /Cadastro -->
+	</form>
+
+<!-- /formulário -->
+
 </body>
 </html>
