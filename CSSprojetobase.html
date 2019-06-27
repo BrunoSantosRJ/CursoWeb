@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSSBase</title>
+	<meta charset="utf-8">
+</head>
+
+<!--internal style sheet-->
+	<style type="text/css">
+			
+		p{color: red;}
+		
+		.azul{color: blue;}
+	
+		#principal{background-color: grey;}
+
+
+/* parte div*/
+		#topo{background: blue;}
+
+		#conteudo{background: red;}
+
+		.produto{background: gray;
+				margin: 10px;}
+/* /parte div*/
+
+
+	</style>
+
+<!--/internal style sheet-->
+
+<body id="principal">
+
+<h1>Estilo CSS</h1>
+<!-- É possível estilizar o site com CSS de três modos são eles diretamente na tag, com uma página externa "style.css" e dentro do head-->
+	
+<!--inline style (pela tag)-->
+	<p style="color: red;">	Lorem ipsum posuere sapien ante velit condimentum urna, himenaeos laoreet curabitur et nibh nulla vel, orci ac ullamcorper enim pretium dictumst. accumsan odio et ultrices nibh inceptos porta sollicitudin platea felis habitasse ullamcorper curabitur torquent, ac faucibus commodo maecenas metus ullamcorper dolor egestas lorem vitae libero rhoncus. egestas hendrerit ad fringilla lacus primis diam convallis, phasellus donec tincidunt tempus nisi non, hendrerit fermentum faucibus ac fames posuere. vivamus mollis iaculis elementum inceptos magna sociosqu orci blandit sit sagittis, suspendisse rhoncus ipsum vel nec duis vestibulum commodo nisl placerat, proin nisl donec consectetur netus velit ultricies habitasse amet.</p>
+<!--/inline style (pela tag)-->
+
+<!--external style sheet-->
+
+	
+
+<!--/external style sheet-->
+
+<!-- -->
+
+<!--/ -->
+
+
+<!-- classes e IDs-->
+
+
+<!-- classe = classificação e ID = identificação. A classe pode definir e ser utilizada por diversos elementos e ID apenas um elemento uma única vez-->	
+<!-- ao utilizar a classe é recomendável usar para um ou outro "paragrafo(p)" (utilizado apenas para exemplo), se for para colocar qualquer valor na maioria das tags selecionadas é melhor inserir-lo criando na head e chamando na tag EX: criado no head: .azul{color: blue;}		chamando a classe: <p class="azul">}-->
+
+<!--<p class="azul">  chama a classe "azul" que foi criada no head -->
+	<p class="azul">Lorem ipsum posuere sapien ante velit condimentum urna, himenaeos laoreet curabitur et nibh nulla vel, orci ac ullamcorper enim pretium dictumst. accumsan odio et ultrices nibh inceptos porta sollicitudin platea felis habitasse ullamcorper curabitur torquent, ac faucibus commodo maecenas metus ullamcorper dolor egestas lorem vitae libero rhoncus. egestas hendrerit ad fringilla lacus primis diam convallis, phasellus donec tincidunt tempus nisi non, hendrerit fermentum faucibus ac fames posuere. vivamus mollis iaculis elementum inceptos magna sociosqu orci blandit sit sagittis, suspendisse rhoncus ipsum vel nec duis vestibulum commodo nisl placerat, proin nisl donec consectetur netus velit ultricies habitasse amet.</p>
+	
+<!-- ID é criado na head e puxado no body-->	
+
+
+<!--/classes e IDs-->
+
+
+<!-- DIV e Span -->
+
+<!-- DIV = divisão, é do tipo bloc(elemento de bloco) que agrupa seus elementos um abaixo do outro. span = elemento do tipo inline(sem relaçao ao inline do CSS) que agrupa seus elementos linha a linha-->
+<!--divs por padrão ocupam todo o espaçamento da tela, pois é um elemento do bloc é como se tivessem uma largura de 100% por isso parece que o ocupou tudo com sua cor-->
+
+	<div id="topo">
+		<img src="imagens/qualquer.png">
+		<ul>
+			<li>Home</li>
+			<li>Produtos</li>
+			<li>Contatos</li>
+		</ul>
+	</div>
+
+	<div id="conteudo">
+		<div class="produto">
+			produto 1
+		</div>
+		
+		<div class="produto">
+			produto 2
+		</div>
+
+		<div class="produto">
+			produto 3
+		</div>
+	</div>
+
+<!--span é inline portanto coloca seus conteudos uma linha a frente da outra, também é utilizado para destacar uma area ou palavra em uma frase sem utilizar o <p> pois  -->
+		<span class="produto">
+			produto 1
+		</span>
+		
+		<span class="produto">
+			produto 2
+		</span>
+
+		<span class="produto">
+			produto 3
+		</span>
+ 
+<div>Todos os<span class="produto">direitos</span>reservados</div> 
+<!--/DIV e Span -->
+
+</body>
+</html>
