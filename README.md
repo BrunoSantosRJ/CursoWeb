@@ -1,3 +1,3 @@
 # CursoWeb
-Exercícios desenvolvimento web da plataforma Udemy.
+Exercícios em html.
 Exercícios para descobrir como se comportam determinadas tags em html.
